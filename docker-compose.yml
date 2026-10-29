@@ -2,13 +2,13 @@ version: "3.8"
 
 services:
   web-search:
-#    image: registry.cn-hangzhou.aliyuncs.com/aasee-share/open-web-search:latest # 国内
-    image: ghcr.io/aas-ee/open-web-search:latest
+    image: registry.cn-hangzhou.aliyuncs.com/aasee-share/open-web-search:latest # 国内
+#    image: ghcr.io/aas-ee/open-web-search:latest
     container_name: web-search
     working_dir: /app
     restart: unless-stopped
     ports:
-      - "3000:3000"
+      - "3003:3000"
 #    extra_hosts:
 #      - "host.docker.internal:host-gateway"
     environment:
